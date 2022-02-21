@@ -5,19 +5,23 @@
 ** main.c
 */
 
-#include "objects.h"
+#include "obj_ori.h"
 #include <stddef.h>
 
 int main(int argc, const char **argv)
 {
-    int errorh = description_demand(argc, argv);
-    struct scene_s *main_scene = NULL;
+    int errorh = 0;
+    scene_t *curr_scene = NULL;
+    window_manager_t *window_manager = NULL;
 
-    if (errorh != 0) {
+    if (errorh != 0)
         return errorh;
-    create_scene(main_scene);
-    if (main_scene != NULL)
-        main_loop(main_scene);
-    destroy_scene(main_scene);
-    return 0;
+    // awake => before game start
+    window_manager = awake(curr_scene, window_manager);
+    // start => all is ready, game start
+    errorh = start(curr_scene, window_manager);
+    // main_loop => loop for the whole game
+    errorh = main_loop(curr_scene, window_manager);
+    sfRenderWindow_destroy(window_manager->rwin);
+    return errorh;
 }
