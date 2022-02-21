@@ -1,0 +1,172 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/viveli/My_repos/real-engine'
+make -C ./sources/lib/
+make[1]: Entering directory '/home/viveli/My_repos/real-engine/sources/lib'
+cc -Wall -Werror -c -o my/math/my_compute_power_rec.o my/math/my_compute_power_rec.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/math/my_compute_power_rec.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/math/my_compute_power_rec.c |  tr ' ' '.'
+ 
+cc -Wall -Werror -c -o my/math/my_compute_square_root.o my/math/my_compute_square_root.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/math/my_compute_square_root.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/math/my_compute_square_root.c |  tr ' ' '.'
+cc -Wall -Werror -c -o my/math/my_sort_int_array.o my/math/my_sort_int_array.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/math/my_sort_int_array.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/math/my_sort_int_array.c |  tr ' ' '.'
+cc -Wall -Werror -c -o my/math/my_find_prime_sup.o my/math/my_find_prime_sup.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/math/my_find_prime_sup.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/math/my_find_prime_sup.c |  tr ' ' '.'
+cc -Wall -Werror -c -o my/manipulations/my_swap.o my/manipulations/my_swap.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/manipulations/my_swap.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/manipulations/my_swap.c |  tr ' ' '.'
+cc -Wall -Werror -c -o my/manipulations/my_memset.o my/manipulations/my_memset.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/manipulations/my_memset.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/manipulations/my_memset.c |  tr ' ' '.'
+ 
+cc -Wall -Werror -c -o my/my_put/my_putchar.o my/my_put/my_putchar.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/my_put/my_putchar.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/my_put/my_putchar.c |  tr ' ' '.'
+cc -Wall -Werror -c -o my/my_put/my_puterror.o my/my_put/my_puterror.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/my_put/my_puterror.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/my_put/my_puterror.c |  tr ' ' '.'
+cc -Wall -Werror -c -o my/my_put/my_putnbr.o my/my_put/my_putnbr.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/my_put/my_putnbr.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/my_put/my_putnbr.c |  tr ' ' '.'
+cc -Wall -Werror -c -o my/my_put/my_putstr.o my/my_put/my_putstr.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/my_put/my_putstr.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/my_put/my_putstr.c |  tr ' ' '.'
+ 
+cc -Wall -Werror -c -o my/str_manipulation/my_revstr.o my/str_manipulation/my_revstr.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/str_manipulation/my_revstr.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/str_manipulation/my_revstr.c |  tr ' ' '.'
+cc -Wall -Werror -c -o my/str_manipulation/my_strcapitalize.o my/str_manipulation/my_strcapitalize.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/str_manipulation/my_strcapitalize.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/str_manipulation/my_strcapitalize.c |  tr ' ' '.'
+cc -Wall -Werror -c -o my/str_manipulation/my_strncat.o my/str_manipulation/my_strncat.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/str_manipulation/my_strncat.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/str_manipulation/my_strncat.c |  tr ' ' '.'
+cc -Wall -Werror -c -o my/str_manipulation/my_strcat.o my/str_manipulation/my_strcat.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/str_manipulation/my_strcat.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/str_manipulation/my_strcat.c |  tr ' ' '.'
+ 
+cc -Wall -Werror -c -o my/str_manipulation/my_strcmp.o my/str_manipulation/my_strcmp.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/str_manipulation/my_strcmp.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/str_manipulation/my_strcmp.c |  tr ' ' '.'
+cc -Wall -Werror -c -o my/str_manipulation/my_strcpy.o my/str_manipulation/my_strcpy.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/str_manipulation/my_strcpy.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/str_manipulation/my_strcpy.c |  tr ' ' '.'
+cc -Wall -Werror -c -o my/str_manipulation/my_strdup.o my/str_manipulation/my_strdup.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/str_manipulation/my_strdup.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/str_manipulation/my_strdup.c |  tr ' ' '.'
+cc -Wall -Werror -c -o my/is_true/my_str_islower.o my/is_true/my_str_islower.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/is_true/my_str_islower.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/is_true/my_str_islower.c |  tr ' ' '.'
+ 
+cc -Wall -Werror -c -o my/is_true/my_is_prime.o my/is_true/my_is_prime.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/is_true/my_is_prime.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/is_true/my_is_prime.c |  tr ' ' '.'
+cc -Wall -Werror -c -o my/is_true/my_str_isnum.o my/is_true/my_str_isnum.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/is_true/my_str_isnum.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/is_true/my_str_isnum.c |  tr ' ' '.'
+ 
+cc -Wall -Werror -c -o my/is_true/my_str_isprintable.o my/is_true/my_str_isprintable.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/is_true/my_str_isprintable.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/is_true/my_str_isprintable.c |  tr ' ' '.'
+cc -Wall -Werror -c -o my/is_true/my_str_isupper.o my/is_true/my_str_isupper.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/is_true/my_str_isupper.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/is_true/my_str_isupper.c |  tr ' ' '.'
+ 
+cc -Wall -Werror -c -o my/str_manipulation/my_strlen.o my/str_manipulation/my_strlen.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/str_manipulation/my_strlen.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/str_manipulation/my_strlen.c |  tr ' ' '.'
+ 
+cc -Wall -Werror -c -o my/str_manipulation/do_strmalloc.o my/str_manipulation/do_strmalloc.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/str_manipulation/do_strmalloc.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/str_manipulation/do_strmalloc.c |  tr ' ' '.'
+cc -Wall -Werror -c -o my/str_manipulation/my_strlowcase.o my/str_manipulation/my_strlowcase.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/str_manipulation/my_strlowcase.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/str_manipulation/my_strlowcase.c |  tr ' ' '.'
+ 
+cc -Wall -Werror -c -o my/str_manipulation/my_strncmp.o my/str_manipulation/my_strncmp.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/str_manipulation/my_strncmp.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/str_manipulation/my_strncmp.c |  tr ' ' '.'
+cc -Wall -Werror -c -o my/str_manipulation/my_strncpy.o my/str_manipulation/my_strncpy.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/str_manipulation/my_strncpy.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/str_manipulation/my_strncpy.c |  tr ' ' '.'
+ 
+cc -Wall -Werror -c -o my/str_manipulation/my_strstr.o my/str_manipulation/my_strstr.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/str_manipulation/my_strstr.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/str_manipulation/my_strstr.c |  tr ' ' '.'
+ 
+cc -Wall -Werror -c -o my/str_manipulation/my_strupcase.o my/str_manipulation/my_strupcase.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/str_manipulation/my_strupcase.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/str_manipulation/my_strupcase.c |  tr ' ' '.'
+cc -Wall -Werror -c -o my/str_manipulation/my_strndup.o my/str_manipulation/my_strndup.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/str_manipulation/my_strndup.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/str_manipulation/my_strndup.c |  tr ' ' '.'
+ 
+cc -Wall -Werror -c -o my/converters/my_revstrtol.o my/converters/my_revstrtol.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/converters/my_revstrtol.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/converters/my_revstrtol.c |  tr ' ' '.'
+ 
+cc -Wall -Werror -c -o my/converters/my_getnbr.o my/converters/my_getnbr.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/converters/my_getnbr.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/converters/my_getnbr.c |  tr ' ' '.'
+cc -Wall -Werror -c -o my/converters/my_strtol.o my/converters/my_strtol.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/converters/my_strtol.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/converters/my_strtol.c |  tr ' ' '.'
+ 
+cc -Wall -Werror -c -o my/converters/my_inttos.o my/converters/my_inttos.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/converters/my_inttos.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/converters/my_inttos.c |  tr ' ' '.'
+ 
+cc -Wall -Werror -c -o my/my_printf/my_printf.o my/my_printf/my_printf.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/my_printf/my_printf.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/my_printf/my_printf.c |  tr ' ' '.'
+ 
+cc -Wall -Werror -c -o my/my_printf/my_printf_fctarr.o my/my_printf/my_printf_fctarr.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/my_printf/my_printf_fctarr.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/my_printf/my_printf_fctarr.c |  tr ' ' '.'
+ 
+cc -Wall -Werror -c -o my/my_printf/my_printf_sint.o my/my_printf/my_printf_sint.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/my_printf/my_printf_sint.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/my_printf/my_printf_sint.c |  tr ' ' '.'
+ 
+cc -Wall -Werror -c -o my/my_printf/my_printf_usint.o my/my_printf/my_printf_usint.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/my_printf/my_printf_usint.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/my_printf/my_printf_usint.c |  tr ' ' '.'
+ 
+cc -Wall -Werror -c -o my/my_printf/my_printf_usinthex.o my/my_printf/my_printf_usinthex.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/my_printf/my_printf_usinthex.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/my_printf/my_printf_usinthex.c |  tr ' ' '.'
+ 
+cc -Wall -Werror -c -o my/my_printf/my_printf_char.o my/my_printf/my_printf_char.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/my_printf/my_printf_char.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/my_printf/my_printf_char.c |  tr ' ' '.'
+cc -Wall -Werror -c -o my/my_printf/my_printf_point.o my/my_printf/my_printf_point.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/my_printf/my_printf_point.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/my_printf/my_printf_point.c |  tr ' ' '.'
+ 
+cc -Wall -Werror -c -o my/my_printf/my_printf_setflag.o my/my_printf/my_printf_setflag.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/my_printf/my_printf_setflag.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/my_printf/my_printf_setflag.c |  tr ' ' '.'
+ 
+cc -Wall -Werror -c -o my/my_printf/my_printf_flag_detection.o my/my_printf/my_printf_flag_detection.c\
+&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" my/my_printf/my_printf_flag_detection.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m]% 50s\n" my/my_printf/my_printf_flag_detection.c |  tr ' ' '.'
+cp headers/my.h headers/printf_header.h ../../includes
+ 
+ar rc libmy.a my/math/my_compute_power_rec.o my/math/my_compute_square_root.o my/math/my_sort_int_array.o my/math/my_find_prime_sup.o my/manipulations/my_swap.o my/manipulations/my_memset.o my/my_put/my_putchar.o my/my_put/my_puterror.o my/my_put/my_putnbr.o my/my_put/my_putstr.o my/str_manipulation/my_revstr.o my/str_manipulation/my_strcapitalize.o my/str_manipulation/my_strncat.o my/str_manipulation/my_strcat.o my/str_manipulation/my_strcmp.o my/str_manipulation/my_strcpy.o my/str_manipulation/my_strdup.o my/is_true/my_str_islower.o my/is_true/my_is_prime.o my/is_true/my_str_isnum.o my/is_true/my_str_isprintable.o my/is_true/my_str_isupper.o my/str_manipulation/my_strlen.o my/str_manipulation/do_strmalloc.o my/str_manipulation/my_strlowcase.o my/str_manipulation/my_strncmp.o my/str_manipulation/my_strncpy.o my/str_manipulation/my_strstr.o my/str_manipulation/my_strupcase.o my/str_manipulation/my_strndup.o my/converters/my_revstrtol.o my/converters/my_getnbr.o my/converters/my_strtol.o my/converters/my_inttos.o my/my_printf/my_printf.o my/my_printf/my_printf_fctarr.o my/my_printf/my_printf_sint.o my/my_printf/my_printf_usint.o my/my_printf/my_printf_usinthex.o my/my_printf/my_printf_char.o my/my_printf/my_printf_point.o my/my_printf/my_printf_setflag.o my/my_printf/my_printf_flag_detection.o
+printf "\e[1;36mFinished compiling library\e[0m\n"
+make[1]: Leaving directory '/home/viveli/My_repos/real-engine/sources/lib'
+ 
+cc -Wextra -Wall -Iincludes -lcsfml-graphics -c -o sources/prog.o sources/prog.c\
+&& printf "[\033[1;35mcompiled\033[0m] % 29s\n" sources/prog.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m] % 29s\n" sources/prog.c |  tr ' ' '.'
+ 
+cc -Wextra -Wall -Iincludes -lcsfml-graphics -c -o sources/main.o sources/main.c\
+&& printf "[\033[1;35mcompiled\033[0m] % 29s\n" sources/main.c |  tr ' ' '.'\
+|| printf "[\033[1;31merror\033[0m] % 29s\n" sources/main.c |  tr ' ' '.'
+cc -o real-ungine sources/prog.o sources/main.o -L./sources/lib/ -lmy -Wextra -Wall -Iincludes -lcsfml-graphics
+echo -e "\e[1;36mFinished compiling real-ungine\e[0m"
+make: Leaving directory '/home/viveli/My_repos/real-engine'
+ 

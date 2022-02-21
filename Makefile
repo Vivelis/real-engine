@@ -6,7 +6,12 @@
 ##
 
 ## path for each scripts
-SRC			=	sources/prog.c
+SRC			=	sources/manage_objects.c	\
+				sources/scene/manage_scenes.c		\
+				sources/start/awake.c				\
+				sources/loop/main_loop.c			\
+				sources/manage_window.c		\
+				sources/start/start.c
 MAIN		=	sources/main.c
 TEST		=	tests/unit_test
 OBJ			=	$(SRC:.c=.o)\
@@ -17,12 +22,12 @@ INCLUDEPATH	=	includes
 LIBS	=	./sources/lib/libmy.a
 
 ## name of the binaries
-EXEC		=	exec_name
+EXEC		=	real-ungine
 DEBUGBIN	=	debug
 TESTBIN		=	unit_test
 
 ## flags
-CFLAGS		=	-Wextra -Wall $(addprefix -I, $(INCLUDEPATH))
+CFLAGS		=	-Wextra -Wall $(addprefix -I, $(INCLUDEPATH)) -lcsfml-graphics
 LDFLAGS		=	$(addprefix -L, $(dir $(LIBS)))\
 				$(addprefix -l, $(subst lib,,$(basename $(notdir $(LIBS)))))
 DEBUGFLAGS	=	-g3
