@@ -8,10 +8,12 @@
 #include "obj_ori.h"
 
 // main_loop => loop for the whole game
-int main_loop(scene_t *curr_w, window_manager_t *w_manager)
+int main_loop(scene_t *curr_w, sfRenderWindow *wdow)
 {
-    while (sfRenderWindow_isOpen(w_manager->rwin)) {
-        sfRenderWindow_clear(w_manager->rwin, sfBlack);
+    sfEvent event;
+
+    while (sfRenderWindow_isOpen(wdow)) {
+        sfRenderWindow_clear(wdow, sfBlack);
         // // physics
         // // fixed_update => use time for things like movement
         // fixed_update();
@@ -36,11 +38,17 @@ int main_loop(scene_t *curr_w, window_manager_t *w_manager)
         // render_scene();
         // // render_ui => render ui (in front)
         // render_ui();
+        sfRenderWindow_display(wdow);
 
         // // pausing
         // check_pause();
 
         // // decommissioning
+        while (sfRenderWindow_pollEvent(wdow, &event)) {
+            if (event.type == sfEvtClosed)
+                sfRenderWindow_close(wdow);
+        }
         // check_quit();
+        my_putstr("work\n");
     }
 }

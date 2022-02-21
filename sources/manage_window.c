@@ -5,17 +5,16 @@
 ** manage_window.c
 */
 
+#include <stdlib.h>
 #include "obj_ori.h"
 
-window_manager_t *init_window(const sfVideoMode vmode, const char *wname)
+sfRenderWindow *init_window(sfVideoMode w_mode, const char *w_name)
 {
-    window_manager_t *w_manager = NULL;
+    sfRenderWindow *window = NULL;
 
-    w_manager = malloc(sizeof(window_manager_t));
-    if (w_manager == NULL)
+    window = sfRenderWindow_create(w_mode, w_name, sfClose | sfResize, NULL);
+    if (!window)
         return NULL;
-    w_manager->vmode = vmode;
-    w_manager->rwin = sfRenderWindow_create(vmode, wname, sfClose | sfResize, NULL);
-    sfRenderWindow_setFramerateLimit(w_manager->rwin, FPS);
-    return w_manager;
+    sfRenderWindow_setFramerateLimit(window, 120);
+    return window;
 }

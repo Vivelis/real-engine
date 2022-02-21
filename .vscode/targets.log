@@ -8,7 +8,7 @@ Makefile:37: *** empty variable name.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Feb 21 15:16:38 2022
+# Make data base, printed on Mon Feb 21 15:35:26 2022
 
 # Variables
 
@@ -25,7 +25,7 @@ OBJ = $(SRC:.c=.o) $(MAIN:.c=.o)
 # environment
 XDG_SESSION_CLASS = user
 # makefile (from 'Makefile', line 9)
-SRC = sources/manage_objects.c sources/manage_scenes.c sources/awake.c sources/main_loop.c sources/manage_window.c sources/start.c
+SRC = sources/manage_objects.c sources/scene/manage_scenes.c sources/start/awake.c sources/loop/main_loop.c sources/manage_window.c sources/start/start.c
 # environment
 XDG_SESSION_TYPE = x11
 # environment
@@ -279,7 +279,6 @@ VSCODE_PID = 138874
 
 # Files
 
- 
 # Not a target:
 all:
 #  Command line target.
@@ -292,7 +291,6 @@ Makefile:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 
 # Not a target:
 .DEFAULT:
@@ -313,7 +311,8 @@ Makefile:
 
 # strcache performance: lookups = 21 / hit rate = 19%
 # hash-table stats:
+ 
 # Load=17/8192=0%, Rehash=0, Collisions=1/21=5%
-# Finished Make data base on Mon Feb 21 15:16:38 2022
+# Finished Make data base on Mon Feb 21 15:35:26 2022
 
  

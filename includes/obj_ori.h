@@ -59,6 +59,6 @@ object_t *create_plane(void);
 int create_scene(char *path);
 
 // manage_window.c
-window_manager_t *init_window(const sfVideoMode vmode, const char *wname);
+sfRenderWindow *init_window(const sfVideoMode vmode, const char *wname);
 
 #endif

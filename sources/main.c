@@ -12,16 +12,16 @@ int main(int argc, const char **argv)
 {
     int errorh = 0;
     scene_t *curr_scene = NULL;
-    window_manager_t *window_manager = NULL;
+    sfRenderWindow *wdow = NULL;
 
     if (errorh != 0)
         return errorh;
     // awake => before game start
-    window_manager = awake(curr_scene, window_manager);
+    wdow = awake(curr_scene, wdow);
     // start => all is ready, game start
-    errorh = start(curr_scene, window_manager);
+    errorh = start(curr_scene, wdow);
     // main_loop => loop for the whole game
-    errorh = main_loop(curr_scene, window_manager);
-    sfRenderWindow_destroy(window_manager->rwin);
+    errorh = main_loop(curr_scene, wdow);
+    sfRenderWindow_destroy(wdow);
     return errorh;
 }
