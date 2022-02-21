@@ -18,6 +18,8 @@ int main(int argc, const char **argv)
         return errorh;
     // awake => before game start
     wdow = awake(curr_scene, wdow);
+    if (wdow == NULL)
+        return my_puterror("real-engine:awake", 84);
     // start => all is ready, game start
     errorh = start(curr_scene, wdow);
     // main_loop => loop for the whole game
